@@ -5,11 +5,14 @@ function listen(eventType, selector, callback) {
     document.querySelector(selector).addEventListener(eventType, callback);
 }
 
-function unCheck(){
-    var get= document.getElementsByName('check');
+function getCheck(checked){
+    const get= document.querySelectorAll('input[type=checkbox]'); 
     for(var i= 0; i<get.length; i++){
-    get[i].checked= false;}
-    }
+        get[i].checked = false;}
+        console.log(get) 
+}
+
+listen("click", "#clearButton", getCheck)
 
   
   
