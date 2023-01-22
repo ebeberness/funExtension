@@ -15,4 +15,3 @@ function getCheck(checked){
 listen("click", "#clearButton", getCheck)
 
   
-  
