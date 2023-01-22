@@ -16,4 +16,3 @@ listen("click", "#clearButton", getCheck)
 
   
   
-  
